@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/tvSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cài đặt ứng dụng"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Chế độ tối -->
+    <TextView
+        android:id="@+id/tvDarkMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chế độ tối"
+        android:textSize="18sp"
+        android:layout_below="@id/tvSettings"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"/>
+
+    <Switch
+        android:id="@+id/switchDarkMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tvSettings"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Kích thước chữ -->
+    <TextView
+        android:id="@+id/tvTextSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kích thước chữ"
+        android:textSize="18sp"
+        android:layout_below="@id/switchDarkMode"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"/>
+
+    <SeekBar
+        android:id="@+id/seekBarTextSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTextSize"
+        android:layout_marginTop="20dp"
+        android:max="30"
+        android:progress="16"/>
+
+    <!-- Chọn màu sắc -->
+    <TextView
+        android:id="@+id/tvTextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn màu sắc"
+        android:textSize="18sp"
+        android:layout_below="@id/seekBarTextSize"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTextColor"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đỏ"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xanh"/>
+
+        <RadioButton
+            android:id="@+id/radioBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xanh dương"/>
+    </RadioGroup>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/colorPrimary"
+        android:title="Ứng dụng của tôi"
+        android:titleTextColor="@android:color/white"/>
+
+    <!-- TextView để hiển thị thông báo -->
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chào mừng đến với ứng dụng!"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
